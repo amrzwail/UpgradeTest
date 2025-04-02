@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="BNI">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="User1">
+      <manager>User2</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="User2">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Role1">
+      <displayName>Role1</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="BNI-IT">
+      <displayName>BNI-IT</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>User2</userName>
+      <roleName>Role1</roleName>
+      <groupName>BNI-IT</groupName>
+    </membership>
+    <membership>
+      <userName>User1</userName>
+      <roleName>Role1</roleName>
+      <groupName>BNI-IT</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
